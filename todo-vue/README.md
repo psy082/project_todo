@@ -16,6 +16,8 @@ git clone https://github.com/psy082/project_todo
 # install node
 apt-get update
 sudo apt-get install -y nodejs
+sudo apt-get install nodejs-legacy
+sudo apt-get install npm
 
 # install mongodb
 sudo apt-get install mongdb-clients mongodb-server
