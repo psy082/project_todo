@@ -28,7 +28,6 @@
 
 <script>
 import TodoItem from './TodoItem'
-import draggable from 'vuedraggable'
 import TodoItemsRemaining from './TodoItemsRemaining'
 import TodoCheckAll from './TodoCheckAll'
 import TodoFiltered from './TodoFiltered'
@@ -39,7 +38,6 @@ export default {
   name: 'todo-list',
   components: {
       TodoItem,
-      draggable,
       TodoItemsRemaining,
       TodoCheckAll,
       TodoFiltered,

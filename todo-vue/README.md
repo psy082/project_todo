@@ -14,13 +14,14 @@ git init
 git clone https://github.com/psy082/project_todo
 
 # install node
-apt-get update
-sudo apt-get install -y nodejs
-sudo apt-get install nodejs-legacy
-sudo apt-get install npm
+sudo apt update
+sudo apt install curl
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+nvm install node
+nvm use node
 
 # install mongodb
-sudo apt-get install mongdb-clients mongodb-server
+sudo apt-get install -y mongdb-clients mongodb-server
 
 # start mongod as a Daemon
 sudo mongod --fork --logpath /var/log/mongodb.log
